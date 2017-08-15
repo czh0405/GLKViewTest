@@ -20,6 +20,7 @@
     [super viewDidLoad];
     self.glView.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     [EAGLContext setCurrentContext:self.glView.context];
+    self.glView.delegate = self;
 //    self.glView.enableSetNeedsDisplay  = YES;
     // Do any additional setup after loading the view, typically from a nib.
 }
