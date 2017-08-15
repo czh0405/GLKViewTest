@@ -13,6 +13,8 @@
 		5C2A90061F429B050094231B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2A90041F429B050094231B /* Main.storyboard */; };
 		5C2A90081F429B050094231B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2A90071F429B050094231B /* Assets.xcassets */; };
 		5C2A900B1F429B050094231B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2A90091F429B050094231B /* LaunchScreen.storyboard */; };
+		5C2A90141F429CDD0094231B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2A90131F429CDD0094231B /* GLKit.framework */; };
+		5C2A90161F429CE60094231B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2A90151F429CE60094231B /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		5C2A90071F429B050094231B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C2A900A1F429B050094231B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C2A900C1F429B050094231B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C2A90131F429CDD0094231B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		5C2A90151F429CE60094231B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C2A90161F429CE60094231B /* OpenGLES.framework in Frameworks */,
+				5C2A90141F429CDD0094231B /* GLKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				5C2A8FFA1F429B050094231B /* GLKViewTest */,
 				5C2A8FF91F429B050094231B /* Products */,
+				5C2A90121F429CDD0094231B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +84,15 @@
 				5C2A8FFC1F429B050094231B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5C2A90121F429CDD0094231B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C2A90151F429CE60094231B /* OpenGLES.framework */,
+				5C2A90131F429CDD0094231B /* GLKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
