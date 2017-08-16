@@ -15,6 +15,9 @@
 		5C2A900B1F429B050094231B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C2A90091F429B050094231B /* LaunchScreen.storyboard */; };
 		5C2A90141F429CDD0094231B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2A90131F429CDD0094231B /* GLKit.framework */; };
 		5C2A90161F429CE60094231B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2A90151F429CE60094231B /* OpenGLES.framework */; };
+		5C2A90211F431AF80094231B /* GLESUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A90201F431AF80094231B /* GLESUtils.m */; };
+		5C2A90241F431E9F0094231B /* shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5C2A90231F431E9F0094231B /* shader.vsh */; };
+		5C2A90261F431EE40094231B /* shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5C2A90251F431EE40094231B /* shader.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,10 @@
 		5C2A900C1F429B050094231B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C2A90131F429CDD0094231B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		5C2A90151F429CE60094231B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5C2A90201F431AF80094231B /* GLESUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESUtils.m; sourceTree = "<group>"; };
+		5C2A90221F431B250094231B /* GLESUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLESUtils.h; sourceTree = "<group>"; };
+		5C2A90231F431E9F0094231B /* shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vsh; sourceTree = "<group>"; };
+		5C2A90251F431EE40094231B /* shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +80,10 @@
 				5C2A90071F429B050094231B /* Assets.xcassets */,
 				5C2A90091F429B050094231B /* LaunchScreen.storyboard */,
 				5C2A900C1F429B050094231B /* Info.plist */,
+				5C2A90171F42AB940094231B /* Resources */,
 				5C2A8FFB1F429B050094231B /* Supporting Files */,
+				5C2A90201F431AF80094231B /* GLESUtils.m */,
+				5C2A90221F431B250094231B /* GLESUtils.h */,
 			);
 			path = GLKViewTest;
 			sourceTree = "<group>";
@@ -82,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				5C2A8FFC1F429B050094231B /* main.m */,
+				5C2A90231F431E9F0094231B /* shader.vsh */,
+				5C2A90251F431EE40094231B /* shader.fsh */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -93,6 +105,13 @@
 				5C2A90131F429CDD0094231B /* GLKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C2A90171F42AB940094231B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +173,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C2A90261F431EE40094231B /* shader.fsh in Resources */,
 				5C2A900B1F429B050094231B /* LaunchScreen.storyboard in Resources */,
 				5C2A90081F429B050094231B /* Assets.xcassets in Resources */,
+				5C2A90241F431E9F0094231B /* shader.vsh in Resources */,
 				5C2A90061F429B050094231B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +190,7 @@
 			files = (
 				5C2A90031F429B050094231B /* ViewController.m in Sources */,
 				5C2A90001F429B050094231B /* AppDelegate.m in Sources */,
+				5C2A90211F431AF80094231B /* GLESUtils.m in Sources */,
 				5C2A8FFD1F429B050094231B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +350,7 @@
 				5C2A90111F429B050094231B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
